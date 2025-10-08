@@ -37,7 +37,7 @@ public class Solution {
         Scanner sc = new Scanner(System.in);
         int a;
         a=sc.nextInt();
-        if((a>=9)&(a<=99))
+        if((a>=9)&&(a<=99))
         {
             System.out.printf("Sum of Digit "+a+" is %03d",(a/10)+(a%10));
         }
