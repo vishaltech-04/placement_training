@@ -1,0 +1,69 @@
+The program to find if the given numbers are Friendly pairs or not (Amicable or not) is discussed here. Friendly Pairs are two or more numbers with a common abundance.
+
+For example,6 and 28 are Friendly Pairs.
+
+    (Sum of divisors of given number1)/given number1 = (Sum of divisors of given number2)/given number2  
+- sum of divisors for 6 is 1,2,3,6=(1+2+3+6)=12
+- sum of divisors for 28 is 1,2,4,7,14,28=56
+- (12/6)==(56/28).Its a Friendly Pair.
+Input Format
+
+Input consists of 2 integers.
+Constraints
+
+No Constraints
+
+Output Format
+
+If it is a Friendly Pair display "Friendly Pair" or displays "Not Friendly Pair".
+Sample Input 0
+
+15
+25
+Sample Output 0
+
+The Given Number 15 and 25 are Friendly Pairs.
+Sample Input 1
+
+8
+30
+Sample Output 1
+
+The Given Number 8 and 30 are Not Friendly Pairs.
+
+-------------------------------------------------------------------------------
+
+import java.util.*;
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int x,y;
+        x=sc.nextInt();
+        y=sc.nextInt();
+        int sum1=0,sum2=0;
+        for(int i=1;i<=x;i++)
+        {
+            if(x%i==0)
+            {
+                sum1=sum1+i;
+            }
+        }
+        for(int i=1;i<=y;i++)
+        {
+            if(y%i==0)
+            {
+                sum2=sum2+i;
+            }
+        }
+        if(sum1/x==sum2/y)
+        {
+           System.out.print("The Given Number "+x+" and "+y+" are Friendly Pairs.");
+        }
+        else
+        {
+            System.out.print("The Given Number "+x+" and "+y+" are Not Friendly Pairs.");
+        }
+        }
+   
+}
