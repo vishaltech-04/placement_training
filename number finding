@@ -1,0 +1,85 @@
+Maya wants to know how the Numbers are converted to string in the program.could you please help her to implements the program.
+
+Input Format
+
+input consists of one integer
+Constraints
+
+Given N is greater than 0 and lesser than 9
+Output Format
+
+print the number into string type.
+Sample Input 0
+
+0
+Sample Output 0
+
+Integer is 0 and String is Zero
+Sample Input 1
+
+2
+Sample Output 1
+
+Integer is 2 and String is Two
+Sample Input 2
+
+10
+Sample Output 2
+
+Invalid Input
+
+-----------------------------------------------------------------------------
+
+import java.util.*;
+public class Solution {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int a;
+        a=sc.nextInt();
+        if(a==0)
+        {
+        System.out.print("Integer is 0 and String is Zero");
+        }
+        else if(a==1)
+        {
+        System.out.print("Integer is 1 and String is One");
+        }
+        else if(a==2)
+        {
+        System.out.print("Integer is 2 and String is Two");
+        }
+        else if(a==3)
+        {
+        System.out.print("Integer is 3 and String is Three");
+        }
+        else if(a==4)
+        {
+        System.out.print("Integer is 4 and String is Four");
+        }
+        else if(a==5)
+        {
+        System.out.print("Integer is 5 and String is Five");
+        }
+        else if(a==6)
+        {
+        System.out.print("Integer is 6 and String is Six");
+        }
+        else if(a==7)
+        {
+        System.out.print("Integer is 7 and String is Seven");
+        }
+        else if(a==8)
+        {
+        System.out.print("Integer is 8 and String is Eight");
+        }
+        else if(a==9)
+        {
+        System.out.print("Integer is 9 and String is Nine");
+        }
+        else
+        {
+        System.out.print("Invalid Input");
+        }
+
+}
+}
