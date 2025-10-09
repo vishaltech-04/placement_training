@@ -1,0 +1,68 @@
+Seela wants to find the sum of even and odd numbers in the between range values.could you please help her to implements the program.
+
+Input Format
+
+Input consists of two integer.
+Constraints
+
+Given N is greater than 1 and lesser than 100.
+
+Output Format
+
+Print the sum of even num and odd num.
+Sample Input 0
+
+3
+9
+Sample Output 0
+
+The Even Sum value is 18.00
+The Odd Sum value is 24.00
+Sample Input 1
+
+11
+23
+Sample Output 1
+
+The Even Sum value is 102.00
+The Odd Sum value is 119.00
+Sample Input 2
+
+100
+200
+Sample Output 2
+
+Invalid Input
+
+----------------------------------------------------------
+
+import java.util.*;
+public class Solution {
+    public static void main(String[] args) {
+         Scanner sc=new Scanner(System.in);
+        int a,b;
+        a=sc.nextInt();
+        b=sc.nextInt();
+        if((a>1 && a<100)&&(b>1 && b<100))
+        {
+        int sum1=0;
+        int sum2=0;
+        for (int i=a;i<=b;i++)
+        {
+         if(i%2==0)
+         {
+          sum1=sum1+i;   
+         }
+        else
+        {
+        sum2=sum2+i;
+        }
+        }
+        System.out.printf("The Even Sum value is %.2f\n",(float)sum1);
+        System.out.printf("The Odd Sum value is %.2f\n",(float)sum2);
+        }
+        else{
+        System.out.printf("Invalid Input");
+        }
+    }
+}
