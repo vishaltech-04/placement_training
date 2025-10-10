@@ -1,0 +1,49 @@
+Write a program to execute the Pattern.
+
+Input Format
+
+Input consists single Integer.
+
+Constraints
+
+Constraints
+
+Output Format
+
+Execute the pattern
+
+Sample Input 0
+
+4
+Sample Output 0
+
+* * * *
+* 1 2 *
+* 3 4 *
+* * * *
+
+---------------------------------------------------------------
+
+import java.util.*;
+public class Main
+{
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int a=sc.nextInt();
+        int sum=0;
+        for(int i=1;i<=a;i++)
+        {
+            for(int j=1;j<=a;j++)
+            {
+                if(i==1|| i==a||j==1||j==a){
+                System.out.print("*"+" ");
+                }
+                else
+                {
+                    System.out.print(++sum + " ");
+                }
+            }
+            System.out.println();
+        }
+    }
+}
